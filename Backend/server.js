@@ -9,7 +9,7 @@ const DEFAULT_PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
-const API_KEY = 'AIzaSyD8HbESkh6KatyE7_FzabS_Ln7M8EGpVnY';
+const API_KEY = '';
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 const model = genAI.getGenerativeModel({
